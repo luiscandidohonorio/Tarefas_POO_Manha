@@ -11,7 +11,7 @@ namespace atividadeDolarEReal
         static void Main(string[] args)
         {
             double reais = 0;
-            double taxa = 3.74d;
+            double taxa = 5.28d;
             double dolar = 0;
 
             Console.WriteLine("\nBem-Vindo\n");
