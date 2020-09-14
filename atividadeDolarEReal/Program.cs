@@ -10,16 +10,24 @@ namespace atividadeDolarEReal
     {
         static void Main(string[] args)
         {
+            double reais = 0;
+            double taxa = 3.74d;
+            double dolar = 0;
+
             Console.WriteLine("\nBem-Vindo\n");
-            Console.WriteLine("\nDigite a sua operação\n");
-            Console.WriteLine("");
-            Console.Write("\n1-Dolar para Real\n");
-            Console.Write("");
-            Console.Write("\n2-Real para Dolar");
-            Console.Write("");
-            Console.WriteLine("\n3-Sair");
-            Console.ReadLine();
-            Console.ReadKey(); 
+            Console.Write("\nEntre com o valor em dólar : ");
+            dolar = double.Parse(Console.ReadLine()); // lê o dolar
+
+            // processamento do valor em reais
+            reais = taxa * dolar;
+
+            // saída ou solução
+            Console.Write("Valor em Reais : $R" + reais);
+
+            // espera entrada do teclado para encerrar programa
+            Console.ReadKey();
         }
     }
 }
+
+
